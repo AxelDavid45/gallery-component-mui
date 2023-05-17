@@ -1,0 +1,28 @@
+.gallery-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.gallery-item img {
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.02);
+}
+
+.gallery-wrapper-modal-image img {
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
