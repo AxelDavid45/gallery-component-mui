@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import CloseFullscreenIcon from "@mui/icons-material/CloseFullscreen";
 import ArrowCircleRightIcon from "@mui/icons-material/ArrowCircleRight";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
@@ -65,6 +64,8 @@ const galleryImages = [
 
 const Img = styled("img")({
   cursor: "pointer",
+  width: "100%",
+  height: "100%",
 });
 export default function GalleryComponent() {
   const [sliderNumber, setSliderNumber] = useState(0);
